@@ -14,12 +14,12 @@
 
 - [ ] **Base level**
 
-- [ ] implement the events board page where users can observe the paginated list of available events. Event should consist of:
+- [x] implement the events board page where users can observe the paginated list of available events. Event should consist of:
 - title;
 - description;
 - event date;
 - organizer
-- [ ] Event registration page: by clicking on “Register”, users should be redirected to the
+- [x] Event registration page: by clicking on “Register”, users should be redirected to the
       event registration page, which contains a registration form with the following fields:
 - full name
 - email
@@ -32,8 +32,8 @@
 - [ ] Everything from the base level
 - [ ] Events board page: add ability to sort events by: title, event date, organizer.
 - [ ] Event registration page:
-- [ ] add form validation (come up with your own requirements for fields’ validity);
-- [ ] add DataPicker to Date of birth input;
+- [x] add form validation (come up with your own requirements for fields’ validity);
+- [] add DataPicker to Date of birth input;
 - [ ] Event participants page: add ability to search participants by full name, email.
 
 - [ ] **Advanced level**
