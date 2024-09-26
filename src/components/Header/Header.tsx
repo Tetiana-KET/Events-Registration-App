@@ -10,7 +10,7 @@ function Header(): JSX.Element {
             <img src="/logo-color.svg" alt="logo-color.svg" />
           </Link>
         </div>
-        <Link to={'/'} className={styles.headerHomeBtn}>
+        <Link to={'/'} className="button">
           Home
         </Link>
       </div>

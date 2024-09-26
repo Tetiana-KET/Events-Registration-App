@@ -1,0 +1,85 @@
+.form-container {
+  flex: 1;
+  max-width: 600px;
+  padding: 20px 30px;
+  margin: auto;
+  margin-top: auto;
+  border-radius: 10px;
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--box-shadow);
+  background-color: var();
+}
+
+.field-wrap {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.field-wrap h3 {
+  margin-bottom: 5px;
+}
+
+.field-wrap input,
+.field-wrap label {
+  display: block;
+  width: 100%;
+  font-size: 18px;
+}
+
+.field-wrap label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.field-wrap input {
+  padding: 5px 10px;
+  line-height: 25px;
+  margin-bottom: 5px;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+}
+
+.field-wrap input::placeholder {
+  text-align: left;
+  color: var(--accent-color);
+}
+
+.came-from-wrap {
+  display: flex;
+  gap: 1px;
+}
+
+.came-from-title {
+  margin-bottom: 10px;
+}
+
+.came-from-wrap div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid var(--accent-color);
+}
+
+.validation-error {
+  color: var(--error-color);
+  font-size: 15px;
+  height: 20px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.submit-button {
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+
+.submit-button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}

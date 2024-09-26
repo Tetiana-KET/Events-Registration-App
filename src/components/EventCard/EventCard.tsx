@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import { EventType } from '../../models/EventType';
+import { EventInterface } from '../../models/EventInterface';
 import styles from './EventCard.module.css';
 
 interface Props {
-  event: EventType;
+  event: EventInterface;
 }
 
 function EventCard(props: Props): JSX.Element {

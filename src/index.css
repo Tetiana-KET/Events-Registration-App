@@ -4,10 +4,8 @@
   --main-color: #0c0c0c;
   --light-color: #ffffff;
   --accent-color: #145cc9;
-  --accent-color-hover: #1972f7;
-  --text-shadow: rgba(243, 243, 243, 0.9) 0px 0px 2px;
+  --accent-color-hover: #4a7fcf;
   --box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 90%);
-  --item-img-hover-shadow: 0 0 20px rgba(222, 222, 204, 0.5);
   --error-color: #fc0303;
 }
 
@@ -35,4 +33,38 @@ body {
   flex: 1;
   padding: 20px 10%;
   overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--light-color);
+  text-align: center;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 700px) {
+  .main-content-wrapper {
+    padding: 20px 10px;
+  }
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--accent-color-hover);
+    color: var(--main-color);
+  }
 }

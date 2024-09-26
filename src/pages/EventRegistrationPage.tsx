@@ -1,4 +1,6 @@
+import RegistrationForm from '../components/RegistrationForm/RegistrationForm';
+
 function EventRegistrationPage() {
-  return <div>Event Registration Page</div>;
+  return <RegistrationForm />;
 }
 export default EventRegistrationPage;
