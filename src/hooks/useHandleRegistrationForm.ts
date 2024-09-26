@@ -15,9 +15,25 @@ export default function useHandleRegistrationForm() {
   } = useForm<FormInterface>({ resolver: yupResolver(userSchema), mode: 'onChange' });
 
   const onSubmit = async (data: FormInterface) => {
-    navigate('/');
-    reset();
-    console.log(data);
+    try {
+      const response = await fetch('http://localhost:3000/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to register user');
+      }
+
+      reset();
+      navigate('/');
+    } catch (error) {
+      console.error('Error during registration:', error);
+    }
   };
+
   return { register, handleSubmit, errors, isValid, onSubmit };
 }

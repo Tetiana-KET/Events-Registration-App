@@ -33,7 +33,7 @@
 - [ ] Events board page: add ability to sort events by: title, event date, organizer.
 - [ ] Event registration page:
 - [x] add form validation (come up with your own requirements for fields’ validity);
-- [] add DataPicker to Date of birth input;
+- [ ] add DataPicker to Date of birth input;
 - [ ] Event participants page: add ability to search participants by full name, email.
 
 - [ ] **Advanced level**
@@ -58,6 +58,14 @@
 - **Linters**: ESLint, Prettier
 
 ## Scripts available
+
+### Start the server
+
+```
+npm start
+```
+
+This command executes the TypeScript server file (server.ts) using ts-node. It allows you to run your TypeScript server without the need to compile it to JavaScript manually.
 
 ### Start development server
 
