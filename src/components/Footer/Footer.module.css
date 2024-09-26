@@ -35,12 +35,12 @@
 
 @media (hover: hover) {
   .social-items:hover .social-item-link {
-    color: var(--footer-social-hover);
+    color: var(--accent-color);
     text-shadow: var(--text-shadow);
   }
 
   .social-items:hover .social-item-svg {
-    fill: var(--footer-social-hover);
+    fill: var(--accent-color);
   }
 }
 
@@ -49,9 +49,3 @@
     padding: 10px 5%;
   }
 }
-
-/* @media (max-width: 768px) {
-  .hiddenOnMobile {
-    display: none;
-  }
-} */

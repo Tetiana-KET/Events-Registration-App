@@ -1,4 +1,6 @@
+import EventsList from '../components/EventsList/EventsList';
+
 function EventsBoardPage() {
-  return <div>Events Board Page</div>;
+  return <EventsList />;
 }
 export default EventsBoardPage;
