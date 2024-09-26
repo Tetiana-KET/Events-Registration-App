@@ -3,7 +3,8 @@
   color-scheme: light dark;
   --main-color: #0c0c0c;
   --light-color: #ffffff;
-  --accent-color: #420f9b;
+  --accent-color: #145cc9;
+  --accent-color-hover: #1972f7;
   --text-shadow: rgba(243, 243, 243, 0.9) 0px 0px 2px;
   --box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 90%);
   --item-img-hover-shadow: 0 0 20px rgba(222, 222, 204, 0.5);
