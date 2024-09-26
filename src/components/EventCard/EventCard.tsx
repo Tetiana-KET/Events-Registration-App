@@ -4,13 +4,12 @@ import styles from './EventCard.module.css';
 
 interface Props {
   event: EventType;
-  id: number;
 }
 
 function EventCard(props: Props): JSX.Element {
   const { title, description, eventDate, organizer } = props.event;
   return (
-    <li className={styles.eventCard} key={`${title}_${props.id}`}>
+    <li className={styles.eventCard}>
       <h3>{title}</h3>
       <p>{description}</p>
       <p>Date: {eventDate}</p>

@@ -18,7 +18,10 @@
     "deploy": "npm run build && npx gh-pages -d dist -e Events-Registration-App"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@hookform/resolvers": "^3.9.0",
+    "@mui/material": "^6.1.1",
     "eslint": "^9.8.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
