@@ -1,0 +1,17 @@
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--accent-color);
+  box-shadow: var(--box-shadow);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo-wrap {
+  max-width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
