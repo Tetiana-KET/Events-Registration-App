@@ -1,0 +1,21 @@
+.sorting-component__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.sorting-component__label {
+  font-weight: 500;
+}
+
+.sorting-component__select {
+  border: 1px solid var(--accent-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.sorting-component__select:focus-visible {
+  outline: none;
+}

@@ -4,16 +4,22 @@ import { PER_PAGE } from '../../consts/perPage';
 import { useEffect, useState } from 'react';
 import PaginationComponent from '../Pagination/PaginationComponent';
 import { EventInterface } from '../../models/EventInterface';
+import SortingComponent from '../SortingComponent/SortingComponent';
+import useSortedEvents from '../../hooks/useSortedEvents';
 
 function EventsList(): JSX.Element {
   const [events, setEvents] = useState<EventInterface[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [sortCriteria, setSortCriteria] = useState('title');
 
   const [currentPage, setCurrentPage] = useState(1);
   const totalPages = Math.ceil(events.length / PER_PAGE);
   const startIndex = (currentPage - 1) * PER_PAGE;
-  const selectedEvents = events.slice(startIndex, startIndex + PER_PAGE);
+
+  const sortedEvents = useSortedEvents(events, sortCriteria);
+
+  const selectedEvents = sortedEvents.slice(startIndex, startIndex + PER_PAGE);
 
   const handlePageChange = (_event: React.ChangeEvent<unknown>, page: number) => {
     setCurrentPage(page);
@@ -51,6 +57,7 @@ function EventsList(): JSX.Element {
       {!events.length && <h2>No Upcoming Events</h2>}
       {events.length && (
         <>
+          <SortingComponent setSortCriteria={setSortCriteria} />
           <h1 className={styles.eventsSectionTitle}>Upcoming Events</h1>
           <ul className={styles.eventsList}>
             {selectedEvents.map((event, index) => (
