@@ -65,7 +65,7 @@
 - **React Hook Form**
 - **Yup** is used for form validation
 - **Vite** is used as bundler
-- **Husky** Pre-push/Pre-commit are set
+- **Husky** Pre-commit are set
 - **Linters**: ESLint, Prettier
 
 ## Scripts available
@@ -183,8 +183,3 @@ To perform total code checking, ensuring code quality and consistency before pus
 npm run validate:all
 ```
 
-### Deploy to gitHub pages
-
-```
-npm run deploy
-```
