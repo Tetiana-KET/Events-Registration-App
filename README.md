@@ -2,7 +2,7 @@
 
 ## The middle level is completed
 
-## **[Deployment Link](events-registration-app-task.netlify.app)**
+## **[Deployment Link](https://events-registration-app-task.netlify.app/)**
 
 ## Requirements
 
