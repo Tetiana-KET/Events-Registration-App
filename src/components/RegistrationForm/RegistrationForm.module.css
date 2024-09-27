@@ -39,6 +39,10 @@
   border-radius: 5px;
 }
 
+.field-wrap.date-picker-wrap input {
+  border: none;
+}
+
 .field-wrap input::placeholder {
   text-align: left;
   color: var(--accent-color);

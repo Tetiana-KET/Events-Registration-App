@@ -1,8 +1,12 @@
 import styles from './RegistrationForm.module.css';
 import useHandleRegistrationForm from '../../hooks/useHandleRegistrationForm';
+import DatePickerWithValidation from '../DataPickerWithValidation/DatePickerWithValidation';
+import { useState } from 'react';
 
 function RegistrationForm() {
   const { register, handleSubmit, errors, isValid, onSubmit, error } = useHandleRegistrationForm();
+  const [validDate, setIsValidDate] = useState(false);
+
   return (
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -16,11 +20,12 @@ function RegistrationForm() {
           <input type="email" placeholder="Enter your email" id="email" {...register('email')} />
           <p className={styles.validationError}>{errors.email && errors.email.message}</p>
         </div>
-        <div className={styles.fieldWrap}>
+
+        <div className={`${styles.fieldWrap} ${styles.datePickerWrap}`}>
           <label htmlFor="birthDate">Date of birth</label>
-          <input type="date" placeholder="Enter your birth date" id="birthDate" {...register('birthDate')} />
-          <p className={styles.validationError}>{errors.birthDate && errors.birthDate.message}</p>
+          <DatePickerWithValidation setIsValidDate={setIsValidDate} />
         </div>
+
         <div className={styles.fieldWrap}>
           <h4 className={styles.cameFromTitle}>Where did you here about this event?</h4>
           <div className={styles.cameFromWrap}>
@@ -40,7 +45,7 @@ function RegistrationForm() {
           <p className={styles.validationError}>{errors.cameFrom && errors.cameFrom.message}</p>
         </div>
         <div className={styles.buttonWrap}>
-          <button className={`${styles.submitButton} button`} type="submit" disabled={!isValid}>
+          <button className={`${styles.submitButton} button`} type="submit" disabled={!isValid || !validDate}>
             Submit
           </button>
         </div>
