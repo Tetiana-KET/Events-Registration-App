@@ -4,10 +4,12 @@ import styles from './EventCard.module.css';
 
 interface Props {
   event: EventInterface;
+  eventId: string;
 }
 
 function EventCard(props: Props): JSX.Element {
   const { title, description, eventDate, organizer } = props.event;
+  const id = props.eventId;
   return (
     <li className={styles.eventCard}>
       <h3>{title}</h3>
@@ -16,10 +18,10 @@ function EventCard(props: Props): JSX.Element {
       <p>Organizer: {organizer}</p>
 
       <div className={styles.eventLinksWrap}>
-        <Link to={`/register`} className={styles.EventCardLink}>
+        <Link to={`/register?eventId=${id}`} className={styles.EventCardLink}>
           Register
         </Link>
-        <Link to={`/view`} className={styles.EventCardLink}>
+        <Link to={`/view?eventId=${id}`} className={styles.EventCardLink}>
           View
         </Link>
       </div>
