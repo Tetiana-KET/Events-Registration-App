@@ -4,10 +4,12 @@ import { UserInterface } from '../models/UserInterface';
 import { userSchema } from '../validation/schema';
 import { useNavigate } from 'react-router-dom';
 import useExtractEventId from './useExtractEventId';
+import { useState } from 'react';
 
 export default function useHandleRegistrationForm() {
   const navigate = useNavigate();
   const eventId = useExtractEventId() || '';
+  const [error, setError] = useState<string | null>(null);
 
   const {
     register,
@@ -28,7 +30,12 @@ export default function useHandleRegistrationForm() {
       });
 
       if (!response.ok) {
-        throw new Error('Failed to register user');
+        if (response.status === 400) {
+          setError('This email is already registered. Please use a different email.');
+        } else {
+          setError('An unexpected error occurred. Please try again later.');
+        }
+        return;
       }
 
       reset();
@@ -38,5 +45,5 @@ export default function useHandleRegistrationForm() {
     }
   };
 
-  return { register, handleSubmit, errors, isValid, onSubmit };
+  return { register, handleSubmit, errors, isValid, onSubmit, error };
 }

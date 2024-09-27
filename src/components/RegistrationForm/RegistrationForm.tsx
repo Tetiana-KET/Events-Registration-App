@@ -2,7 +2,7 @@ import styles from './RegistrationForm.module.css';
 import useHandleRegistrationForm from '../../hooks/useHandleRegistrationForm';
 
 function RegistrationForm() {
-  const { register, handleSubmit, errors, isValid, onSubmit } = useHandleRegistrationForm();
+  const { register, handleSubmit, errors, isValid, onSubmit, error } = useHandleRegistrationForm();
   return (
     <div className={styles.formContainer}>
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -39,12 +39,12 @@ function RegistrationForm() {
           </div>
           <p className={styles.validationError}>{errors.cameFrom && errors.cameFrom.message}</p>
         </div>
-
         <div className={styles.buttonWrap}>
           <button className={`${styles.submitButton} button`} type="submit" disabled={!isValid}>
             Submit
           </button>
         </div>
+        <p className={styles.registrationError}>{error && error}</p>
       </form>
     </div>
   );

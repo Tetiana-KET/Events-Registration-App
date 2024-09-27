@@ -75,11 +75,22 @@
 
 .submit-button {
   display: block;
-  margin: auto;
+  margin: 0 auto 10px;
   transition: all 0.5s;
 }
 
 .submit-button:disabled {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.registration-error {
+  color: var(--error-color);
+  font-size: 15px;
+  font-weight: 600;
+  height: 20px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
 }
