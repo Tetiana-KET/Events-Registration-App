@@ -39,7 +39,9 @@ body {
 }
 
 .button {
-  width: 100px;
+  min-width: 100px;
+  max-width: fit-content;
+  padding: 0 20px;
   height: 40px;
   display: flex;
   justify-content: center;
