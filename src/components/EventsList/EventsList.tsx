@@ -56,8 +56,8 @@ function EventsList(): JSX.Element {
             {selectedEvents.map((event, index) => (
               <EventCard
                 event={event}
-                key={`${event.title}_${index}`}
-                eventId={`${event.title.split(' ').join('_')}_${index}`}
+                key={`${event.title}_${startIndex + index}`}
+                eventId={`${event.title.split(' ').join('_')}_${startIndex + index}`}
               />
             ))}
           </ul>
