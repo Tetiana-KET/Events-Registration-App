@@ -8,7 +8,7 @@
 1. Clone the repository.
 2. Install the dependencies using `npm install`.
 3. Start the server by running `npm start`.
-4. ##### Please ensure the server is running before using the application, as it depends on server data.
+##### Please ensure the server is running before using the application, as it depends on server data.
 
 ![image](https://github.com/user-attachments/assets/51b8ed2e-7b6a-46a2-9c7d-5f8260512ff0)
 ![image](https://github.com/user-attachments/assets/781e9965-0844-40fe-9e5c-d16bc163b8c2)
