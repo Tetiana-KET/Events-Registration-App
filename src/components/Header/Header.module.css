@@ -1,0 +1,26 @@
+.header {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--accent-color);
+  box-shadow: var(--box-shadow);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo-wrap {
+  max-width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 700px) {
+  .header__logo-wrap {
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

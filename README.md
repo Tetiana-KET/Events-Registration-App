@@ -1,6 +1,54 @@
 ## Events Registration App
 
-## **[Deployment Link]()**
+## The middle level is completed
+
+## **[Deployment Link](https://events-registration-app-task.netlify.app/)**
+![image](https://github.com/user-attachments/assets/51b8ed2e-7b6a-46a2-9c7d-5f8260512ff0)
+![image](https://github.com/user-attachments/assets/781e9965-0844-40fe-9e5c-d16bc163b8c2)
+![image](https://github.com/user-attachments/assets/716b4713-4b6a-4d82-ad86-4ce83a769003)
+
+## Requirements
+
+- [x] Add the level of accomplished tasks in the README.md file.
+- [x] Upload source code to GitHub/BitBucket/GitLab and share a link.
+- [x] Host an application in any preferable way and share the URL to access it.
+- [x] The front-end part must be done in HTML/CSS/JavaScript (with or without any
+      framework), with any preferred design style.
+- [x] The back-end part can be done in NodeJS with or without any framework.
+- [x] Use any relational or non-relational database.
+
+- [x] **Base level**
+
+- [x] implement the events board page where users can observe the paginated list of available events. Event should consist of:
+- title;
+- description;
+- event date;
+- organizer
+- [x] Event registration page: by clicking on “Register”, users should be redirected to the
+      event registration page, which contains a registration form with the following fields:
+- full name
+- email
+- date of birth
+- “where did you hear about this event?”.
+- [x] Once the form is submitted, the response should be stored in a database.
+- [x] implement the event participants page where users can see a list of registered participants. This page should be available by clicking on the “View” button.
+
+- [x] **Middle level**
+- [x] Everything from the base level
+- [x] Events board page: add ability to sort events by: title, event date, organizer.
+- [x] Event registration page:add form validation (come up with your own requirements for fields’ validity);
+- [x] add DataPicker to Date of birth input;
+- [x] Event participants page: add ability to search participants by full name, email.
+
+- [ ] **Advanced level**
+- [ ] Everything from the middle level
+- [ ] Events board page: add infinite scroll pagination (when a user scrolls the page, it
+      automatically loads more events).
+- [ ] Event participants page: add line/bar chart displaying the amount of registrations per
+      day for the given event.
+- [ ] Implement a separate script that runs at a defined interval of time: it fetches the list of
+      available events from a third-party API and stores them as events in your database.
+      You can search for any free API available on the internet
 
 ## Tech Stack
 
@@ -14,6 +62,14 @@
 - **Linters**: ESLint, Prettier
 
 ## Scripts available
+
+### Start the server
+
+```
+npm start
+```
+
+This command executes the TypeScript server file (server.ts) using ts-node. It allows you to run your TypeScript server without the need to compile it to JavaScript manually.
 
 ### Start development server
 
