@@ -1,16 +1,18 @@
 ## Events Registration App
 
+## Middle level
+
 ## **[Deployment Link]()**
 
 ## Requirements
 
-- [ ] Add the level of accomplished tasks in the README.md file.
+- [x] Add the level of accomplished tasks in the README.md file.
 - [ ] Upload source code to GitHub/BitBucket/GitLab and share a link.
 - [ ] Host an application in any preferable way and share the URL to access it.
-- [ ] The front-end part must be done in HTML/CSS/JavaScript (with or without any
+- [x] The front-end part must be done in HTML/CSS/JavaScript (with or without any
       framework), with any preferred design style.
-- [ ] The back-end part can be done in NodeJS with or without any framework.
-- [ ] Use any relational or non-relational database.
+- [x] The back-end part can be done in NodeJS with or without any framework.
+- [x] Use any relational or non-relational database.
 
 - [ ] **Base level**
 
@@ -25,14 +27,13 @@
 - email
 - date of birth
 - “where did you hear about this event?”.
-- [ ] Once the form is submitted, the response should be stored in a database.
-- [ ] implement the event participants page where users can see a list of registered participants. This page should be available by clicking on the “View” button.
+- [x] Once the form is submitted, the response should be stored in a database.
+- [x] implement the event participants page where users can see a list of registered participants. This page should be available by clicking on the “View” button.
 
 - [ ] **Middle level**
-- [ ] Everything from the base level
+- [x] Everything from the base level
 - [ ] Events board page: add ability to sort events by: title, event date, organizer.
-- [ ] Event registration page:
-- [x] add form validation (come up with your own requirements for fields’ validity);
+- [x] Event registration page:add form validation (come up with your own requirements for fields’ validity);
 - [ ] add DataPicker to Date of birth input;
 - [ ] Event participants page: add ability to search participants by full name, email.
 
