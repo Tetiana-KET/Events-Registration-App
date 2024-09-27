@@ -3,6 +3,9 @@
 ## The middle level is completed
 
 ## **[Deployment Link](https://events-registration-app-task.netlify.app/)**
+![image](https://github.com/user-attachments/assets/51b8ed2e-7b6a-46a2-9c7d-5f8260512ff0)
+![image](https://github.com/user-attachments/assets/781e9965-0844-40fe-9e5c-d16bc163b8c2)
+![image](https://github.com/user-attachments/assets/716b4713-4b6a-4d82-ad86-4ce83a769003)
 
 ## Requirements
 
