@@ -1,5 +1,5 @@
 import styles from './EventParticipantCard.module.css';
-import { UserInterface } from 'src/models/UserInterface';
+import UserInterface from '../../models/UserInterface';
 
 interface Props {
   user: UserInterface;

@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { UserInterface } from '../models/UserInterface';
+import UserInterface from '../models/UserInterface';
 import { userSchema } from '../validation/schema';
 import { useNavigate } from 'react-router-dom';
 import useExtractEventId from './useExtractEventId';

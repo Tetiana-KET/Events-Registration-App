@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import useExtractEventId from '../hooks/useExtractEventId';
 import EventParticipantCard from '../components/EventParticipantCard/EventParticipantCard';
-import { UserInterface } from '../models/UserInterface';
+import UserInterface from '../models/UserInterface';
 import EmptyParticipantList from '../components/EmptyParticipantList/EmptyParticipantList';
 import { getEventName } from '../utils/getEventName';
 import SearchParticipants from '../components/SearchParticipants/SearchParticipants';
@@ -18,7 +18,7 @@ function EventParticipantsPage() {
       const data = await response.json();
       setRegistrations(data);
     }
-participantsToShow;
+
     fetchRegistrations();
   }, [eventId]);
 

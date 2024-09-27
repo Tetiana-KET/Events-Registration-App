@@ -1,4 +1,4 @@
-import { UserInterface } from 'src/models/UserInterface';
+import UserInterface from '../models/UserInterface';
 
 export default function useFilterRegistrations(registrations: UserInterface[], searchQuery: string) {
   return registrations.filter(
